@@ -1,0 +1,53 @@
+{
+    "name": "ngx-numeral",
+    "version": "0.0.1",
+    "main": "./dist/index",
+    "typings": "./dist/index.d.ts",
+    "description": "An Angular pipe module for interfacing the Awesome Numeraljs library.",
+    "license": "MIT",
+    "homepage": "https://github.com/jogboms/ngx-numeral#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jogboms/ngx-numeral.git"
+    },
+    "keywords": [
+        "Ng",
+        "Ngx",
+        "Angular",
+        "Angular2",
+        "Numeraljs",
+        "Numeral",
+        "Pipes",
+        "Numbers"
+    ],
+    "scripts": {
+        "test": "",
+        "build": "ngc -p .",
+        "lint": "tslint --project ./tsconfig.json --type-check --fix",
+        "demo:watch": "watch 'npm run demo' ./src",
+        "demo": "npm run build && cd ./demo && npm i ../"
+    },
+    "author": {
+        "name": "jogboms"
+    },
+    "bugs": {
+        "url": "https://github.com/jogboms/ngx-numeral/issues"
+    },
+    "dependencies": {
+        "numeral": "~2.0.6"
+    },
+    "peerDependencies": {
+        "@angular/core": "^4.2.3"
+    },
+    "devDependencies": {
+        "@types/numeral": "0.0.22",
+        "@angular/cli": "^1.4.2",
+        "@angular/common": "^4.2.3",
+        "@angular/compiler": "^4.2.3",
+        "@angular/compiler-cli": "^4.2.3",
+        "@angular/core": "^4.2.3",
+        "tslint": "^5.4.3",
+        "typescript": "2.4.0",
+        "watch": "^1.0.2"
+    }
+}
