@@ -1,5 +1,12 @@
 .vscode
 .history
 node_modules/
+src/
+demo/
+.gitignore
+.npmignore
+.editorconfig
+tsconfig.json
+tslint.json
 *.log
 package-lock.json
