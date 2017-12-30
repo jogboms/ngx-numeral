@@ -1,6 +1,6 @@
 {
     "name": "ngx-numeral",
-    "version": "0.0.1",
+    "version": "0.0.1-beta.0",
     "main": "./dist/index",
     "typings": "./dist/index.d.ts",
     "description": "An Angular pipe module for interfacing the Awesome Numeraljs library.",
@@ -21,8 +21,13 @@
         "Numbers"
     ],
     "scripts": {
-        "test": "",
         "build": "ngc -p .",
+        "precommit": "npm run test --no-verify",
+        "preversion": "npm run build",
+        "version": "git add -A .",
+        "prepush": "npm run lint && npm version prerelease -m 'feat: Bumped version to %s' --no-verify",
+        "test": "echo \"Error: no test specified\" && exit 0",
+        "prepublish": "npm run build",
         "lint": "tslint --project ./tsconfig.json --type-check --fix",
         "demo:watch": "watch 'npm run demo' ./src",
         "demo": "npm run build && cd ./demo && npm i ../"
@@ -47,6 +52,7 @@
         "@angular/compiler-cli": "^4.2.3",
         "@angular/core": "^4.2.3",
         "tslint": "^5.4.3",
+        "husky": "^0.14.3",
         "typescript": "2.4.0",
         "watch": "^1.0.2"
     }
