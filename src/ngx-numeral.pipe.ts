@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform, Inject, InjectionToken } from "@angular/core";
+import { Numeral, RegisterType, RoundingFunction, NumeralJSLocale, NumeralJsFormat } from "./numeraljs";
 import * as numeral from "numeral";
 
 export const DEFAULT_NUMERAL = new InjectionToken<number>("DEFAULT_NUMERAL");

@@ -1,4 +1,3 @@
-// angular imports
 import { NgModule, ModuleWithProviders } from "@angular/core";
 import { NumeralPipe, DEFAULT_NUMERAL } from "./ngx-numeral.pipe";
 
@@ -23,3 +22,4 @@ export class NumeralModule {
 }
 
 export { NumeralPipe, DEFAULT_NUMERAL } from "./ngx-numeral.pipe";
+export * from "./numeraljs";
