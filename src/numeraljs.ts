@@ -29,12 +29,12 @@ export interface NumeralJsFormat {
     regexps: {
         format: RegExp,
         unformat: RegExp,
-    },
-    format: (value: any, format: string, roundingFunction: RoundingFunction) => string,
-    unformat: (value: string) => number
+    };
+    format: (value: any, format: string, roundingFunction: RoundingFunction) => string;
+    unformat: (value: string) => number;
 }
 
-export type RegisterType = 'format' | 'locale';
+export type RegisterType = "format" | "locale";
 
 // http://numeraljs.com/#use-it
 export interface Numeral {
