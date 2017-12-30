@@ -9,8 +9,11 @@ import { NumeralPipe } from 'ngx-numeral';
 export class AppComponent {
   title = 'app';
 
-  get test() {
-    // return (new NumeralPipe('7784.374')).format('$0,0.00');
+  get test_1() {
+    return (new NumeralPipe('7784.374')).format('$0,0.00');
+  }
+
+  get test_2() {
     return (new NumeralPipe()).format('$0,0.00');
   }
 }
