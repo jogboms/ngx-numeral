@@ -1,5 +1,6 @@
 # ngx-numeral
 [![npm version](https://badge.fury.io/js/ngx-numeral.svg)](https://badge.fury.io/js/ngx-numeral)
+[![npm](https://img.shields.io/npm/dt/ngx-numeral.svg?label=npm%20downloads)](https://www.npmjs.com/package/ngx-numeral)
 [![Build Status](https://travis-ci.org/jogboms/ngx-numeral.svg?branch=master)](https://travis-ci.org/jogboms/ngx-numeral)
 [![Coverage Status](https://coveralls.io/repos/github/jogboms/ngx-numeral/badge.svg?branch=master&cacheBuster=1)](https://coveralls.io/github/jogboms/ngx-numeral?branch=master)
 
