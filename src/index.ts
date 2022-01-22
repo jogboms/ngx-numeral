@@ -11,7 +11,7 @@ const DECLARATIONS = [
 })
 
 export class NumeralModule {
-    static forRoot(): ModuleWithProviders {
+    static forRoot(): ModuleWithProviders<NumeralModule> {
         return {
             ngModule: NumeralModule,
             providers: [
